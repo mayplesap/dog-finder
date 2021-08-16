@@ -4,12 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 import Nav from "./Nav";
 import Routes from "./Routes";
 
-function App() {
+function App({ dogs }) {
   return (
     <div className="App">
       <BrowserRouter>
         <Nav />
-        <Routes />
+        <Routes dogs={dogs}/>
       </BrowserRouter>
     </div>
   );
