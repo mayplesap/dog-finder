@@ -3,8 +3,13 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./Nav";
 import Routes from "./Routes";
+import duke from "./dog-images/duke.jpg"
+import perry from "./dog-images/perry.jpg"
+import tubby from "./dog-images/tubby.jpg"
+import whiskey from "./dog-images/whiskey.jpg"
 
 function App({ dogs }) {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -20,7 +25,7 @@ App.defaultProps = {
     {
       name: "Whiskey",
       age: 5,
-      src: "./dog-images/whiskey.jpg",
+      src: whiskey,
       facts: [
         "Whiskey loves eating popcorn.",
         "Whiskey is a terrible guard dog.",
@@ -30,7 +35,7 @@ App.defaultProps = {
     {
       name: "Duke",
       age: 3,
-      src: "./dog-images/duke.jpg",
+      src: duke,
       facts: [
         "Duke believes that ball is life.",
         "Duke likes snow.",
@@ -40,7 +45,7 @@ App.defaultProps = {
     {
       name: "Perry",
       age: 4,
-      src: "./dog-images/perry.jpg",
+      src: perry,
       facts: [
         "Perry loves all humans.",
         "Perry demolishes all snacks.",
@@ -50,7 +55,7 @@ App.defaultProps = {
     {
       name: "Tubby",
       age: 4,
-      src: "./dog-images/tubby.jpg",
+      src: tubby,
       facts: [
         "Tubby is really stupid.",
         "Tubby does not like walks.",
