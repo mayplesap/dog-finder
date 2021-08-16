@@ -14,7 +14,7 @@ function DogDetails({ dogs }) {
       <img src={dog.src} alt={name} />
         <h3> Facts!!!! </h3>
       {dog.facts.map(fact => (
-        <p>{fact}</p>
+        <p key={fact}>{fact}</p>
       ))}
     </div>
   );
